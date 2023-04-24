@@ -67,7 +67,7 @@ if __name__ == '__main__':
     parser.add_argument('--input_json_path', required=True, help='Path to the input JSON file')
     parser.add_argument('--output_txt_path', required=True, help='Path to the output TXT file')
     parser.add_argument('--temp_json_path', default='buffer.json', help='Path to the temporary JSON file for buffering')
-    parser.add_argument('--strict_format', action='store_true', help='Enable strict formatting filters')
+    parser.add_argument('--strict_format', action='store_false', default=True, help='Disable strict formatting filters')
 
     args = parser.parse_args()
     main(args)
