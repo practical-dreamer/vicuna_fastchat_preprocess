@@ -10,18 +10,18 @@ This repository contains a script to convert chat conversations from a JSON file
 
 ## Installation
 
-# 1. Setup Conda Environment (Optional but recommended)
+### 1. Setup Conda Environment (Optional but recommended)
 ```
 conda create -n fastchat-conversation-converter python=3.10.9
 conda activate fastchat-conversation-converter
 ```
-# 2. Clone this repo and install dependencies
+### 2. Clone this repo and install dependencies
 ```
 git clone https://github.com/practicaldreamer/fastchat-conversation-converter
 cd fastchat-conversation-converter
 pip install ijson
 ```
-# 3. Clone FastChat Repo and install FastChat
+### 3. Clone FastChat Repo and install FastChat
 ```
 mkdir repos
 cd repos
@@ -33,7 +33,6 @@ cd ..
 ```
 ## Usage
 
-# Run the script:
 ``` 
 process_conversations.py \
 --model_path '/home/user/Documents/models/llama-7b' \
