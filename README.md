@@ -31,6 +31,7 @@ pip install -e .
 cd ..
 cd ..
 ```
+*Note: My script was built around FastChat commit 5ccf842*
 ## Usage
 
 ``` 
