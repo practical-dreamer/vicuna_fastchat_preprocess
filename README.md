@@ -5,24 +5,41 @@ This repository contains a script to convert chat conversations from a JSON file
 ## Dependencies
 
 - Python 3.6 or higher
-- Transformers library
 - IJSON library
 - FastChat repository (specifically, the `train.py` script located under the `fastchat/train/` directory)
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/practicaldreamer/fastchat-conversation-converter.git`
-2. Install the required Python libraries: `pip install transformers ijson`
-3. Clone the FastChat repository (if you haven't already): `git clone https://github.com/lm-sys/FastChat.git`
-
+# 1. Setup Conda Environment (Optional but recommended)
+```
+conda create -n fastchat-conversation-converter python=3.10.9
+conda activate fastchat-conversation-converter
+```
+# 2. Clone this repo and install dependencies
+```
+git clone https://github.com/practicaldreamer/fastchat-conversation-converter
+cd fastchat-conversation-converter
+pip install ijson
+```
+# 3. Clone FastChat Repo and install FastChat
+```
+mkdir repos
+cd repos
+git clone https://github.com/lm-sys/FastChat
+cd FastChat
+pip install -e .
+cd ..
+cd ..
+```
 ## Usage
 
-1. Modify the script `conversation_converter.py` to include the correct paths for the FastChat `train.py` file and the input/output files.
-2. Run the script:
-`python conversation_converter.py \
-  --model_path '/home/user/Documents/models/llama-7b' \
-  --input_json_path '/path/to/input.json' \
-  --output_txt_path '/path/to/output.txt'`
+# Run the script:
+``` 
+process_conversations.py \
+--model_path '/home/user/Documents/models/llama-7b' \
+--input_json_path '/home/user/Downloads/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json' \
+--output_txt_path '/home/user/Documents/output.txt'
+```
 Replace the arguments with the appropriate values for your use case.
 
 ## Credits
