@@ -51,7 +51,7 @@ def main(args):
                 for conversation in buffer:
                     data_dict = preprocess([conversation["conversations"]], tokenizer)
                     input_ids = data_dict["input_ids"]
-                    decoded_text = tokenizer.decode(input_ids[0], skip_special_tokens=True)
+                    decoded_text = tokenizer.decode(input_ids[0], skip_special_tokens=Fase)
 
                     # Append the decoded text to the output file
                     out_f.write(decoded_text + '\n')
