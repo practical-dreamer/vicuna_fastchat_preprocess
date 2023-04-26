@@ -35,7 +35,7 @@ cd ..
 ## Usage
 
 ``` 
-process_conversations.py \
+python process_conversations.py \
 --model_path '/home/user/Documents/models/llama-7b' \
 --input_json_path '/home/user/Downloads/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json' \
 --output_txt_path '/home/user/Documents/output.txt'
